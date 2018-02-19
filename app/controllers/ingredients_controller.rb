@@ -4,7 +4,9 @@ class IngredientsController < ApplicationController
   end
   def create
     @ingredient = Ingredient.new(ingreidnet_params)
-
+    if @ingredient.valid?
+      @ingredient.save
+      redirect_to ingredient_path(@ingredient)
   end
   def edit
   end
