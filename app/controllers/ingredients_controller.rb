@@ -3,6 +3,8 @@ class IngredientsController < ApplicationController
     @ingredient = Ingredient.new
   end
   def create
+    @ingredient = Ingredient.new(ingreidnet_params)
+
   end
   def edit
   end
