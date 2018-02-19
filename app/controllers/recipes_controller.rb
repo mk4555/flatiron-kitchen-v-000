@@ -16,6 +16,7 @@ class RecipeController < ApplicationController
 
   def edit
   end
+  
   def update
   end
 
