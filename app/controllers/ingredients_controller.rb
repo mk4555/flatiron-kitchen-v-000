@@ -7,6 +7,9 @@ class IngredientsController < ApplicationController
     if @ingredient.valid?
       @ingredient.save
       redirect_to ingredient_path(@ingredient)
+    else
+      render "new"
+    end
   end
   def edit
   end
