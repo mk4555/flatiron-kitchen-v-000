@@ -1,4 +1,4 @@
-class RecipeController < ApplicationController
+class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
@@ -16,7 +16,7 @@ class RecipeController < ApplicationController
 
   def edit
   end
-  
+
   def update
   end
 
